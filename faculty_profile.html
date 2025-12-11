@@ -321,7 +321,7 @@ function clearForm(){
 async function submitProfile(){
   const data = collect();
   if(!data.name || !data.email){ alert("Enter Name and Email"); return; }
-  const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbz920AseOfHPBmEpHbr31FuqhiIx9Pj5nx-GzM7KPheRofFmoagHEwvCjb1QLIoTZDw/exec";
+  const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwWxc0ecUUW2TxxXJrJoxhrrKyPOHSCoQcwZEQH4zn6OmkA_Ej75GfjB01UM-iJfQTsPg/exec";
   el('status').innerText = "Submitting...";
   try{
     await fetch(WEB_APP_URL, {
@@ -342,3 +342,4 @@ async function submitProfile(){
 </script>
 </body>
 </html>
+
